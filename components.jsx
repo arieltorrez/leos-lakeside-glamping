@@ -208,10 +208,9 @@ function Hero() {
     <header className="hero" id="top">
       <div className="hero-media">
         <video
-          src="uploads/hero-lake.mp4"
+          src="/uploads/hero-lake.mp4"
           autoPlay
           muted
-          loop
           playsInline
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
         ></video>
