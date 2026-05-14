@@ -146,7 +146,14 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   border-radius: 999px;
   transition: background 0.2s, color 0.2s;
 }
-.nav-cta:hover { background: currentColor; color: var(--bg); }
+.nav-cta:hover { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+
+/* ── Hide nav on scroll down, show on scroll up ─────────────────────── */
+.nav {
+  transform: translateY(0);
+  transition: background 0.3s ease, backdrop-filter 0.3s ease, padding 0.3s ease, transform 0.35s ease;
+}
+.nav.nav--hidden { transform: translateY(-110%); }
 @media (max-width: 800px) {
   .nav-links { display: none; }
 }

@@ -63,14 +63,21 @@ function CountUp({ to, duration = 1600, decimals = 0, prefix = "", suffix = "" }
 // ── Nav ─────────────────────────────────────────────────────────────────────
 function Nav() {
   const [scrolled, setScrolled] = useState(false);
+  const [hidden, setHidden] = useState(false);
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
+    let lastY = window.scrollY;
+    const onScroll = () => {
+      const y = window.scrollY;
+      setScrolled(y > 40);
+      setHidden(y > lastY && y > 100);
+      lastY = y;
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
   return (
-    <nav className="nav" data-scrolled={scrolled}>
+    <nav className={`nav${hidden ? " nav--hidden" : ""}`} data-scrolled={scrolled}>
       <a href="#top" className="nav-brand">
         <span className="mark">L</span>
         <span>Leo&rsquo;s Lakeside</span>
@@ -208,9 +215,10 @@ function Hero() {
     <header className="hero" id="top">
       <div className="hero-media">
         <video
-          src="/uploads/hero-lake.mp4"
+          src="uploads/hero-lake.mp4"
           autoPlay
           muted
+          loop
           playsInline
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
         ></video>
