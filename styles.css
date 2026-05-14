@@ -167,6 +167,12 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   display: block;
   --is-radius: 0 !important;
 }
+.hero-media video {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .hero-media::after {
   content: ""; position: absolute; inset: 0;
   background: linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.05) 35%, rgba(0,0,0,0.15) 65%, rgba(0,0,0,0.6) 100%);
@@ -174,6 +180,50 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   z-index: 1;
 }
 
+/* ── Video slot (hero background video drop zone) ──────────────────────── */
+.video-slot {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  overflow: hidden;
+  background: #1a1f1c;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  color: #a8a698;
+  transition: background 0.2s;
+}
+.video-slot.is-filled { cursor: default; }
+.video-slot.is-over { background: #2a3530; outline: 1px dashed #a8a698; outline-offset: -16px; }
+.video-slot video {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.video-slot .vs-empty {
+  position: relative;
+  display: flex; flex-direction: column; align-items: center; gap: 12px;
+  text-align: center; padding: 32px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.video-slot .vs-cap { font-size: 13px; opacity: 0.9; }
+.video-slot .vs-sub { font-size: 10px; opacity: 0.55; letter-spacing: 0.18em; }
+.video-slot .vs-err { margin-top: 8px; color: #e85a3b; font-size: 10px; opacity: 0.85; max-width: 32ch; }
+.video-slot .vs-clear {
+  position: absolute; top: 16px; right: 16px;
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.5);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  display: grid; place-items: center;
+  opacity: 0; transition: opacity 0.2s;
+  z-index: 3;
+}
+.video-slot:hover .vs-clear { opacity: 1; }
 .hero-inner {
   position: absolute; inset: 0;
   padding: 0 var(--gutter) 80px;
@@ -212,6 +262,15 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   display: flex; justify-content: flex-end; align-items: flex-end;
   gap: 40px;
   flex-wrap: wrap;
+}
+.hero-tag {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(18px, 1.5vw, 22px);
+  font-weight: 400;
+  max-width: 36ch;
+  line-height: 1.4;
+  opacity: 0.92;
 }
 .hero-meta {
   font-family: var(--font-mono);
