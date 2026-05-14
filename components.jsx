@@ -105,15 +105,116 @@ function ScrollProgress() {
 }
 
 // ── Hero ────────────────────────────────────────────────────────────────────
+function VideoSlot({ id, placeholder, poster }) {
+  const storageKey = `vs-${id}`;
+  const [src, setSrc] = useState(null);
+  const [over, setOver] = useState(false);
+  const [err, setErr] = useState("");
+  const inputRef = useRef(null);
+
+  // Hydrate from localStorage
+  useEffect(() => {
+    try {
+      const v = localStorage.getItem(storageKey);
+      if (v) setSrc(v);
+    } catch (e) {}
+  }, [storageKey]);
+
+  const ingest = (f) => {
+    if (!f) return;
+    if (!f.type || !f.type.startsWith("video/")) {
+      setErr("That doesn’t look like a video file.");
+      return;
+    }
+    setErr("");
+    // Try to persist small videos as data URL; larger ones use object URL (session-only).
+    if (f.size <= 8 * 1024 * 1024) {
+      const reader = new FileReader();
+      reader.onload = () => {
+        const url = String(reader.result || "");
+        try { localStorage.setItem(storageKey, url); } catch (e) {}
+        setSrc(url);
+      };
+      reader.readAsDataURL(f);
+    } else {
+      const url = URL.createObjectURL(f);
+      setSrc(url);
+      setErr("Large file — will not persist across reloads. Re-drop after refresh.");
+    }
+  };
+
+  const onDrop = (e) => {
+    e.preventDefault();
+    setOver(false);
+    const f = e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0];
+    ingest(f);
+  };
+
+  const clear = (e) => {
+    e.stopPropagation();
+    try { localStorage.removeItem(storageKey); } catch (e2) {}
+    setSrc(null);
+  };
+
+  return (
+    <div
+      className={`video-slot ${over ? "is-over" : ""} ${src ? "is-filled" : ""}`}
+      onDragOver={(e) => { e.preventDefault(); setOver(true); }}
+      onDragLeave={() => setOver(false)}
+      onDrop={onDrop}
+      onClick={() => !src && inputRef.current && inputRef.current.click()}
+    >
+      <input
+        ref={inputRef}
+        type="file"
+        accept="video/*"
+        style={{ display: "none" }}
+        onChange={(e) => ingest(e.target.files[0])}
+      />
+      {src ? (
+        <React.Fragment>
+          <video
+            key={src}
+            src={src}
+            autoPlay
+            muted
+            loop
+            playsInline
+            poster={poster}
+          ></video>
+          <button className="vs-clear" onClick={clear} title="Clear video">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="1.6">
+              <path d="M5 5l14 14M19 5L5 19" />
+            </svg>
+          </button>
+        </React.Fragment>
+      ) : (
+        <div className="vs-empty">
+          <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" strokeWidth="1.2">
+            <rect x="3" y="6" width="14" height="12" rx="1" />
+            <path d="M17 10l4-2v8l-4-2z" />
+          </svg>
+          <div className="vs-cap">{placeholder || "Drop a video"}</div>
+          <div className="vs-sub">or click to browse · mp4 / webm</div>
+          {err && <div className="vs-err">{err}</div>}
+        </div>
+      )}
+    </div>
+  );
+}
+
 function Hero() {
   return (
     <header className="hero" id="top">
       <div className="hero-media">
-        <image-slot
-          id="hero-lake"
-          shape="rect"
-          placeholder="Drop a wide lake / dusk hero shot (3000×1800+)"
-        ></image-slot>
+        <video
+          src="uploads/hero-lake.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+        ></video>
       </div>
       <div className="hero-inner">
         <div className="hero-eyebrow">
