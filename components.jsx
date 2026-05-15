@@ -210,10 +210,10 @@ function Metrics({ lang }) {
         <Reveal delay="2"><p className="section-lede" style={{ maxWidth: "36ch" }}>{T.lede}</p></Reveal>
       </div>
       <div className="metrics-grid">
-        <Reveal><Metric label={T.suites.label} value={24} note={T.suites.note} /></Reveal>
-        <Reveal delay="1"><Metric label={T.site.label} value={38} unit="acres" note={T.site.note} /></Reveal>
-        <Reveal delay="2"><Metric label={T.capital.label} value={4.2} decimals={1} prefix="$" unit="M" note={T.capital.note} /></Reveal>
-        <Reveal delay="3"><Metric label={T.irr.label} value={18.4} decimals={1} suffix="%" note={T.irr.note} /></Reveal>
+        <Reveal><Metric label={T.suites.label} value={5} note={T.suites.note} /></Reveal>
+        <Reveal delay="1"><Metric label={T.site.label} value={1} unit="ha" note={T.site.note} /></Reveal>
+        <Reveal delay="2"><Metric label={T.capital.label} value={135.96} decimals={0} prefix="$" unit="K" note={T.capital.note} /></Reveal>
+        <Reveal delay="3"><Metric label={T.irr.label} value={37.5} decimals={0} suffix="%" note={T.irr.note} /></Reveal>
       </div>
       <div className="metrics-foot">{T.foot}</div>
     </section>

@@ -9,27 +9,27 @@ window.TRANSLATIONS = {
     },
     hero: {
       eyebrow: "Investor Brief · Spring 2026",
-      title1: "A quieter", title2: "kind of luxury,", title3: "by the lake.",
+      title1: "A quieter", title2: "kind of luxury,", title3: "on Lake Titicaca.",
       project: "Project", phase: "Phase", open: "Open",
-      projectVal: "Leo's Lakeside Glamping", phaseVal: "II / IV — Build out", openVal: "Summer 2027",
+      projectVal: "Leo's Lakeside Glamping", phaseVal: "I / III — Build out", openVal: "Late 2026",
       scroll: "Scroll"
     },
     vision: {
       eyebrow: "01 — The vision",
       title: "Built around the water, not around the road.",
-      lede: "Leo's Lakeside is a small, deliberate hospitality project. Each suite is sited for a private view, lifted on slender steel piers to leave the meadow intact, and finished in cedar that will silver into the landscape over time. Twenty-four keys. No motorboats. No televisions. A restaurant that closes at ten.",
-      quoteWho: "Leo Marchetti\nFounder",
-      quoteWhat: "\u201cWe are not building a resort. We are restoring a piece of shoreline and inviting twenty-four households at a time to be quiet in it.\u201d"
+      lede: "Leo's Lakeside is a premium glamping project on the shores of Lake Titicaca, Copacabana. Five domes — two for couples, three for families — each with a private lake view, hot tub, outdoor pergola, and off-grid solar power. No motorboats on this stretch. No televisions. Just the highest navigable lake in the world, at 3,800 metres above sea level.",
+      quoteWho: "Ariel R. Torrez\nFounder",
+      quoteWhat: "\u201cWe are not building a resort. We are creating the first premium glamping experience on Lake Titicaca — and inviting a small group of investors to be part of it from day one.\u201d"
     },
     metrics: {
       eyebrow: "02 — By the numbers",
       title: "A small project, sized for return.",
       lede: "Targets reviewed quarterly with an independent hospitality analyst. Full underwriting available on request.",
       foot: "Figures indicative — complete financial model & sensitivities provided under NDA.",
-      suites: { label: "Suites", note: "Six typologies, sleeping 2 – 6 each. Cap held at 24 to protect occupancy economics and site quietude." },
-      site: { label: "Site", note: "Private freehold including 1,400 linear feet of natural shoreline and protected woodland." },
-      capital: { label: "Capital raise", note: "Series A. $1.7M committed to date. $2.5M open through Q3 2026." },
-      irr: { label: "Target IRR", note: "Five-year hold, indicative. Conservative model assumes 62% blended occupancy at $480 ADR." }
+      suites: { label: "Domes", note: "5 domes in Phase 1 (2 couple + 3 family). Capacity 2–6 guests each. Off-grid solar system, hot tubs, and outdoor pergola included." },
+      site: { label: "Site", note: "1 hectare with direct beach access on Lake Titicaca. $85K land already acquired and titled." },
+      capital: { label: "Phase 1 raise", note: "Immediate capital required for 5 domes + off-grid infrastructure. $97K already invested (land + earthworks)." },
+      irr: { label: "Target IRR", note: "Base scenario. Conservative: ~25% | Optimistic: ~50%. Payback estimated 2.5–3.5 years." }
     },
     film: {
       eyebrow: "03 — The film",
@@ -45,11 +45,11 @@ window.TRANSLATIONS = {
       lede: "Three of five phases complete. We are eleven weeks into construction and tracking 3% under our original capital plan. Quarterly progress reports are sent to all committed investors.",
       done: "✓ Complete", active: "● In progress", upcoming: "○ Upcoming",
       phases: [
-        { date: "Q3 2024", title: "Land", desc: "38-acre parcel acquired in full. Zoning variance for low-density resort use approved." },
-        { date: "Q2 2025", title: "Design", desc: "Master plan, environmental survey and shoreline study complete. Suite typology finalised with Atelier North." },
-        { date: "Q1 2026", title: "Permits", desc: "All municipal, environmental and shoreline permits in hand. Construction insurance bound." },
-        { date: "Q2 2026 → Q1 2027", title: "Build", desc: "Site works underway. Foundations on Suites 1–8 in. Pier crew mobilised. On schedule, slightly under budget." },
-        { date: "Summer 2027", title: "Open", desc: "Soft launch with twelve suites in May, full opening in July. Bookings open to investors first." }
+        { date: "Q3 2024", title: "Land", desc: "1-hectare parcel with direct beach access acquired and titled. $85K invested. Earthworks and access road completed ($12K)." },
+        { date: "Q1 2025", title: "Design", desc: "Master plan, environmental study and dome typology finalized. Off-grid solar system, biodigester and water filtration systems specified." },
+        { date: "Q2 2025", title: "Permits", desc: "All municipal and environmental permits in hand. LLC incorporated in the USA for USD collections and investor distributions." },
+        { date: "Q2 2026 → Q4 2026", title: "Build", desc: "Phase 1 underway: 5 domes (2 couple + 3 family), pergolas, hot tubs, solar system, biodigester and landscaping. On schedule." },
+        { date: "2027", title: "Phase 2 & 3", desc: "Events area (chapel, event domes, panoramic pool). Then overwater domes + planetarium restaurant on the lake." }
       ]
     },
     gallery: {
@@ -60,23 +60,29 @@ window.TRANSLATIONS = {
     location: {
       eyebrow: "06 — The place",
       title: "Far enough to forget. Close enough to fill.",
-      lede: "A sheltered glacial lake on the eastern edge of the Pine River valley — deep, cold, motor-restricted, and within a comfortable drive of three major metros.",
+      lede: "Lake Titicaca, Copacabana, Bolivia — the highest navigable lake in the world at 3,800m. Over 2 million visitors per year, with well-defined high and low seasons. No premium glamping exists on the lake yet.",
       stats: [
-        { k: "Drive · Metro A", v: "1h 50m" }, { k: "Drive · Metro B", v: "2h 30m" },
-        { k: "Nearest airport", v: "42 min" }, { k: "Elevation", v: "1,180 ft" },
-        { k: "Season", v: "May → October" }
+        { k: "Altitude", v: "3,800 m" },
+        { k: "Visitors / year", v: "2M+" },
+        { k: "From La Paz", v: "~3.5h drive" },
+        { k: "From Puno, Peru", v: "~1h drive" },
+        { k: "Season", v: "Apr → Nov" }
       ]
     },
     investment: {
       eyebrow: "07 — The opportunity",
-      title: "Series A — open through Q3.",
-      lede: "We are raising the remaining $2.5M of our $4.2M Series A. Capital is deployed against construction milestones, with quarterly distributions targeted from year two of operation.",
+      title: "Phase 1 — open now.",
+      lede: "We are raising $135,960 for Phase 1 (5 domes + off-grid infrastructure). Capital is deployed against construction milestones. Phase 1 investors have right of first refusal on Phases 2 and 3.",
       cta1: "Request the deck →", cta2: "Book a site visit",
       lines: [
-        { k: "Raise size", v: "$4.2M" }, { k: "Committed", v: "$1.7M (40%)" },
-        { k: "Open", v: "$2.5M" }, { k: "Minimum ticket", v: "$50,000" },
-        { k: "Instrument", v: "Common equity" }, { k: "Target hold", v: "5 years" },
-        { k: "Target IRR", v: "18.4%" }, { k: "Close", v: "30 Sep 2026" }
+        { k: "Phase 1 raise", v: "$135,960" },
+        { k: "Already invested", v: "$97,000 (land + earthworks)" },
+        { k: "Investor equity", v: "60%" },
+        { k: "Founder equity", v: "40%" },
+        { k: "Minimum ticket", v: "$15,000" },
+        { k: "Instrument", v: "LLC equity (USD)" },
+        { k: "Target IRR", v: "~35–40% (base)" },
+        { k: "Payback", v: "2.5–3.5 years" }
       ]
     },
     team: {
@@ -91,7 +97,7 @@ window.TRANSLATIONS = {
       eyebrow: "09 — Get in touch",
       title: "Receive the full investor pack.",
       lede: "The deck, financial model, architectural drawings and current construction report — sent under NDA within one business day. Site visits arranged on request.",
-      address: "Pine River Valley · By appointment only",
+      address: "Copacabana, Bolivia · By appointment only",
       nameLbl: "Name", emailLbl: "Email", orgLbl: "Organisation", ticketLbl: "Indicative ticket",
       namePh: "Your name", emailPh: "you@example.com", orgPh: "Firm / family office (optional)",
       ticketPh: "Select…",
@@ -104,7 +110,7 @@ window.TRANSLATIONS = {
     },
     footer: {
       brand: "Leo's Lakeside Glamping",
-      copy: "© 2026 · Pine River Holdings, LLC",
+      copy: "© 2026 · Leo's Lakeside Glamping LLC",
       ir: "Investor relations · invest@leoslakeside.com"
     }
   },
@@ -117,27 +123,27 @@ window.TRANSLATIONS = {
     },
     hero: {
       eyebrow: "Brief para Inversores · Primavera 2026",
-      title1: "Un lujo más", title2: "silencioso,", title3: "junto al lago.",
+      title1: "Un lujo más", title2: "silencioso,", title3: "en el Lago Titicaca.",
       project: "Proyecto", phase: "Fase", open: "Apertura",
-      projectVal: "Leo's Lakeside Glamping", phaseVal: "II / IV — Construcción", openVal: "Verano 2027",
+      projectVal: "Leo's Lakeside Glamping", phaseVal: "I / III — Construcción", openVal: "Fines de 2026",
       scroll: "Bajar"
     },
     vision: {
       eyebrow: "01 — La visión",
       title: "Construido alrededor del agua, no de la carretera.",
-      lede: "Leo's Lakeside es un proyecto hotelero pequeño y deliberado. Cada suite está ubicada para tener una vista privada, elevada sobre pilotes de acero para preservar el prado, y terminada en cedro que se irá integrando al paisaje con el tiempo. Veinticuatro suites. Sin lanchas. Sin televisores. Un restaurante que cierra a las diez.",
-      quoteWho: "Leo Marchetti\nFundador",
-      quoteWhat: "\u201cNo estamos construyendo un resort. Estamos restaurando un tramo de orilla e invitando a veinticuatro familias a la vez a estar en silencio en él.\u201d"
+      lede: "Leo's Lakeside es un proyecto de glamping premium a orillas del Lago Titicaca, en Copacabana. Cinco domos — dos de pareja y tres familiares — cada uno con vista privada al lago, tina caliente, pérgola exterior y energía solar off-grid. Sin lanchas a motor en este tramo. Sin televisores. Solo el lago navegable más alto del mundo, a 3.800 metros sobre el nivel del mar.",
+      quoteWho: "Ariel R. Torrez\nFundador",
+      quoteWhat: "\u201cNo estamos construyendo un resort. Estamos creando la primera experiencia de glamping premium en el Lago Titicaca — e invitando a un pequeño grupo de inversores a ser parte de esto desde el primer día.\u201d"
     },
     metrics: {
       eyebrow: "02 — Los números",
       title: "Un proyecto pequeño, pensado para rendir.",
       lede: "Metas revisadas trimestralmente con un analista hotelero independiente. Suscripción completa disponible bajo solicitud.",
       foot: "Cifras indicativas — modelo financiero completo y sensibilidades disponibles bajo NDA.",
-      suites: { label: "Suites", note: "Seis tipologías, capacidad de 2 a 6 personas. Límite de 24 para proteger la ocupación y la tranquilidad del lugar." },
-      site: { label: "Terreno", note: "Propiedad privada con 430 metros lineales de orilla natural y bosque protegido." },
-      capital: { label: "Capital a recaudar", note: "Serie A. $1.7M comprometidos a la fecha. $2.5M disponibles hasta el Q3 2026." },
-      irr: { label: "TIR objetivo", note: "Tenencia de cinco años, indicativo. Modelo conservador asume 62% de ocupación combinada a $480 ADR." }
+      suites: { label: "Domos", note: "5 domos en Fase 1 (2 de pareja + 3 familiares). Capacidad de 2 a 6 personas. Sistema solar off-grid, tinas calientes y pérgola exterior incluidos." },
+      site: { label: "Terreno", note: "1 hectárea con acceso directo a playa en el Lago Titicaca. $85.000 ya invertidos en terreno escriturado." },
+      capital: { label: "Recaudación Fase 1", note: "Capital inmediato para 5 domos + infraestructura off-grid. $97.000 ya ejecutados (terreno + movimiento de tierra)." },
+      irr: { label: "TIR objetivo", note: "Escenario base. Conservador: ~25% | Optimista: ~50%. Payback estimado 2,5–3,5 años." }
     },
     film: {
       eyebrow: "03 — El film",
@@ -153,11 +159,11 @@ window.TRANSLATIONS = {
       lede: "Tres de cinco fases completadas. Llevamos once semanas de construcción y vamos un 3% por debajo de nuestro plan de capital original. Se envían informes trimestrales a todos los inversores comprometidos.",
       done: "✓ Completado", active: "● En progreso", upcoming: "○ Próximo",
       phases: [
-        { date: "Q3 2024", title: "Terreno", desc: "Parcela de 15 hectáreas adquirida en su totalidad. Varianza de zonificación para uso de resort de baja densidad aprobada." },
-        { date: "Q2 2025", title: "Diseño", desc: "Plan maestro, estudio ambiental y de orilla completados. Tipología de suites finalizada con Atelier North." },
-        { date: "Q1 2026", title: "Permisos", desc: "Todos los permisos municipales, ambientales y de orilla en mano. Seguro de construcción contratado." },
-        { date: "Q2 2026 → Q1 2027", title: "Construcción", desc: "Obras en curso. Cimientos de suites 1–8 listos. Cuadrilla de pilotes movilizada. En calendario, ligeramente bajo presupuesto." },
-        { date: "Verano 2027", title: "Apertura", desc: "Lanzamiento suave con doce suites en mayo, apertura completa en julio. Reservas abiertas primero para inversores." }
+        { date: "Q3 2024", title: "Terreno", desc: "Parcela de 1 hectárea con acceso directo a playa adquirida y escriturada. $85.000 invertidos. Movimiento de tierra y accesos completados ($12.000)." },
+        { date: "Q1 2025", title: "Diseño", desc: "Plan maestro, estudio ambiental y tipología de domos finalizados. Sistema solar off-grid, biodigestor y filtración de agua especificados." },
+        { date: "Q2 2025", title: "Permisos", desc: "Todos los permisos municipales y ambientales en mano. LLC constituida en EEUU para cobros en USD y distribuciones a inversores." },
+        { date: "Q2 2026 → Q4 2026", title: "Construcción", desc: "Fase 1 en marcha: 5 domos (2 de pareja + 3 familiares), pérgolas, tinas calientes, sistema solar, biodigestor y paisajismo. En calendario." },
+        { date: "2027", title: "Fases 2 y 3", desc: "Área de eventos (capilla, domos de eventos, piscina panorámica). Luego domos sobre el agua + restaurante planetario en el lago." }
       ]
     },
     gallery: {
@@ -168,23 +174,29 @@ window.TRANSLATIONS = {
     location: {
       eyebrow: "06 — El lugar",
       title: "Suficientemente lejos para desconectarse. Suficientemente cerca para llenarse.",
-      lede: "Un lago glaciar resguardado en el borde este del valle del Río Pine — profundo, frío, sin motor, y a un viaje cómodo de tres grandes ciudades.",
+      lede: "Lago Titicaca, Copacabana, Bolivia — el lago navegable más alto del mundo a 3.800 m. Más de 2 millones de visitantes por año, con temporadas alta y baja bien definidas. Aún no existe glamping premium en el lago.",
       stats: [
-        { k: "Auto · Ciudad A", v: "1h 50m" }, { k: "Auto · Ciudad B", v: "2h 30m" },
-        { k: "Aeropuerto más cercano", v: "42 min" }, { k: "Altitud", v: "360 m" },
-        { k: "Temporada", v: "Mayo → Octubre" }
+        { k: "Altitud", v: "3.800 m" },
+        { k: "Visitantes / año", v: "+2 millones" },
+        { k: "Desde La Paz", v: "~3,5h en auto" },
+        { k: "Desde Puno, Perú", v: "~1h en auto" },
+        { k: "Temporada", v: "Abr → Nov" }
       ]
     },
     investment: {
       eyebrow: "07 — La oportunidad",
-      title: "Serie A — abierta hasta el Q3.",
-      lede: "Estamos recaudando los $2.5M restantes de nuestra Serie A de $4.2M. El capital se despliega contra hitos de construcción, con distribuciones trimestrales previstas desde el segundo año de operación.",
+      title: "Fase 1 — abierta ahora.",
+      lede: "Estamos levantando $135.960 para la Fase 1 (5 domos + infraestructura off-grid). El capital se despliega contra hitos de construcción. Los inversores de Fase 1 tienen derecho de preferencia en Fases 2 y 3.",
       cta1: "Solicitar el deck →", cta2: "Reservar visita al sitio",
       lines: [
-        { k: "Monto a recaudar", v: "$4.2M" }, { k: "Comprometido", v: "$1.7M (40%)" },
-        { k: "Disponible", v: "$2.5M" }, { k: "Ticket mínimo", v: "$50,000" },
-        { k: "Instrumento", v: "Capital ordinario" }, { k: "Tenencia objetivo", v: "5 años" },
-        { k: "TIR objetivo", v: "18.4%" }, { k: "Cierre", v: "30 sep 2026" }
+        { k: "Recaudación Fase 1", v: "$135.960" },
+        { k: "Ya invertido", v: "$97.000 (terreno + tierra)" },
+        { k: "Equity inversores", v: "60%" },
+        { k: "Equity fundadores", v: "40%" },
+        { k: "Ticket mínimo", v: "$15.000" },
+        { k: "Instrumento", v: "Equity LLC (USD)" },
+        { k: "TIR objetivo", v: "~35–40% (base)" },
+        { k: "Payback", v: "2,5–3,5 años" }
       ]
     },
     team: {
@@ -199,7 +211,7 @@ window.TRANSLATIONS = {
       eyebrow: "09 — Ponerse en contacto",
       title: "Recibe el pack completo para inversores.",
       lede: "El deck, modelo financiero, planos arquitectónicos e informe de construcción actual — enviados bajo NDA en un día hábil. Visitas al sitio coordinadas bajo solicitud.",
-      address: "Valle del Río Pine · Solo con cita previa",
+      address: "Copacabana, Bolivia · Solo con cita previa",
       nameLbl: "Nombre", emailLbl: "Correo", orgLbl: "Organización", ticketLbl: "Ticket indicativo",
       namePh: "Tu nombre", emailPh: "tu@ejemplo.com", orgPh: "Empresa / family office (opcional)",
       ticketPh: "Seleccionar…",
@@ -212,7 +224,7 @@ window.TRANSLATIONS = {
     },
     footer: {
       brand: "Leo's Lakeside Glamping",
-      copy: "© 2026 · Pine River Holdings, LLC",
+      copy: "© 2026 · Leo's Lakeside Glamping LLC",
       ir: "Relaciones con inversores · invest@leoslakeside.com"
     }
   }
