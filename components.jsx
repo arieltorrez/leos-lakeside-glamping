@@ -453,7 +453,7 @@ function Contact({ lang }) {
           <Reveal delay="3">
             <div className="meta">
               <div><a href="mailto:invest@leoslakeside.com">invest@leoslakeside.com</a></div>
-              <div><a href="tel:+15551234567">+1 (555) 123-4567</a></div>
+              <div><a href="https://wa.me/59172072795" target="_blank">+591 72072795 (WhatsApp)</a></div>
               <div>{T.address}</div>
             </div>
           </Reveal>
