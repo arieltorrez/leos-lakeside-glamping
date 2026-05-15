@@ -359,6 +359,17 @@ function Metrics() {
 // ── Video ───────────────────────────────────────────────────────────────────
 function VideoSection() {
   const [playing, setPlaying] = useState(false);
+  const videoRef = React.useRef(null);
+
+  const handlePlay = () => {
+    setPlaying(true);
+    setTimeout(() => { if (videoRef.current) videoRef.current.play(); }, 50);
+  };
+  const handleClose = () => {
+    setPlaying(false);
+    if (videoRef.current) { videoRef.current.pause(); videoRef.current.currentTime = 0; }
+  };
+
   return (
     <section className="video-section" id="film">
       <div className="video-head">
@@ -382,7 +393,7 @@ function VideoSection() {
       <Reveal>
         <div className={`video-wrap ${playing ? "video-playing" : ""}`}>
           <img src="/uploads/the-film.mp4" style={{display:"none"}} />
-          <div className="video-overlay" onClick={() => setPlaying(true)}>
+          <div className="video-overlay" onClick={handlePlay}>
             <div className="video-play" aria-label="Play project film">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8V4z"/></svg>
             </div>
@@ -392,15 +403,15 @@ function VideoSection() {
             <span>02:14 &middot; 4K &middot; April 2026</span>
           </div>
           <div className="video-player">
-            <button className="close-btn" onClick={() => setPlaying(false)} aria-label="Close video">
+            <button className="close-btn" onClick={handleClose} aria-label="Close video">
               <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" strokeWidth="1.5" fill="none">
                 <path d="M5 5l14 14M19 5L5 19" />
               </svg>
             </button>
             <video
+              ref={videoRef}
               src="/uploads/the-film.mp4"
               controls
-              autoPlay
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
             ></video>
           </div>
