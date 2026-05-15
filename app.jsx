@@ -33,6 +33,7 @@ function applyFontPair(key) {
 function App() {
   const { useTweaks } = window;
   const [t, setT] = useTweaks(TWEAK_DEFAULTS);
+  const [lang, setLang] = React.useState("en");
 
   React.useEffect(() => {
     document.documentElement.setAttribute("data-palette", t.palette);
@@ -63,18 +64,18 @@ function App() {
   return (
     <React.Fragment>
       {t.progressBar && <ScrollProgress />}
-      <Nav />
-      <Hero />
-      <Vision />
-      <Metrics />
-      <VideoSection />
-      <Timeline />
-      <Gallery />
-      <Location />
-      <Investment />
-      <Team />
-      <Contact />
-      <Footer />
+      <Nav lang={lang} setLang={setLang} />
+      <Hero lang={lang} />
+      <Vision lang={lang} />
+      <Metrics lang={lang} />
+      <VideoSection lang={lang} />
+      <Timeline lang={lang} />
+      <Gallery lang={lang} />
+      <Location lang={lang} />
+      <Investment lang={lang} />
+      <Team lang={lang} />
+      <Contact lang={lang} />
+      <Footer lang={lang} />
 
       <TweaksPanel title="Tweaks">
         <TweakSection label="Palette">
