@@ -55,7 +55,7 @@ window.TRANSLATIONS = {
     gallery: {
       eyebrow: "05 — The work",
       title: "Renderings, site, and the small details.",
-      captions: ["Suite 04 — east-facing rendering", "Shoreline, looking north", "Interior — cedar & oiled brass", "Site progress — April 2026", "Aerial study, masterplan", "Outdoor bath, suite typology B"]
+      captions: ["Glamping lounge bar", "Overwater planetarium restaurant on the lake", "Interior of one of the domes", "Event amenities — weddings & celebrations", "Clifftop bar & restaurant with beach view", "Hot tub in the dome pergola"]
     },
     location: {
       eyebrow: "06 — The place",
@@ -169,7 +169,7 @@ window.TRANSLATIONS = {
     gallery: {
       eyebrow: "05 — El trabajo",
       title: "Renders, terreno y los pequeños detalles.",
-      captions: ["Suite 04 — render orientado al este", "Orilla, mirando al norte", "Interior — cedro y latón", "Avance del sitio — abril 2026", "Estudio aéreo, masterplan", "Baño exterior, tipología B"]
+      captions: ["Sala bar del glamping", "Restaurante planetario sobre el lago", "Interior de uno de los domos", "Amenidades para eventos como bodas", "Bar restaurant en el acantilado con vista a la playa", "Tina caliente en la pérgola de los domos"]
     },
     location: {
       eyebrow: "06 — El lugar",
