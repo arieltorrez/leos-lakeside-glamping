@@ -490,12 +490,12 @@ function Timeline() {
 
 // ── Gallery ─────────────────────────────────────────────────────────────────
 const GALLERY = [
-  { id: "g-suite", cls: "g1", caption: "Suite 04 — east-facing rendering" },
-  { id: "g-shore", cls: "g2", caption: "Shoreline, looking north" },
-  { id: "g-interior", cls: "g3", caption: "Interior — cedar & oiled brass" },
-  { id: "g-site", cls: "g4", caption: "Site progress — April 2026" },
-  { id: "g-aerial", cls: "g5", caption: "Aerial study, masterplan" },
-  { id: "g-bath", cls: "g6", caption: "Outdoor bath, suite typology B" },
+  { id: "g-suite", cls: "g1", caption: "Suite 04 — east-facing rendering", src: "/uploads/g-suite.webp" },
+  { id: "g-shore", cls: "g2", caption: "Shoreline, looking north", src: "/uploads/g-shore.webp" },
+  { id: "g-interior", cls: "g3", caption: "Interior — cedar & oiled brass", src: "/uploads/g-interior.webp" },
+  { id: "g-site", cls: "g4", caption: "Site progress — April 2026", src: "/uploads/g-site.webp" },
+  { id: "g-aerial", cls: "g5", caption: "Aerial study, masterplan", src: "/uploads/g-aerial.webp" },
+  { id: "g-bath", cls: "g6", caption: "Outdoor bath, suite typology B", src: "/uploads/g-bath.webp" },
 ];
 
 function Gallery() {
@@ -512,7 +512,7 @@ function Gallery() {
       <div className="gallery-grid">
         {GALLERY.map((g, i) => (
           <Reveal key={g.id} delay={i % 4} className={`gallery-item ${g.cls}`}>
-            <image-slot id={g.id} shape="rect" placeholder={g.caption}></image-slot>
+            <img src={g.src} alt={g.caption} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
             <div className="caption">{g.caption}</div>
           </Reveal>
         ))}
