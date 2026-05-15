@@ -471,6 +471,12 @@ section { position: relative; }
   border-radius: 4px;
   background: var(--ink);
 }
+.video-wrap > video.poster {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
 .video-wrap image-slot {
   width: 100% !important; height: 100% !important;
   position: absolute; inset: 0;
@@ -534,6 +540,11 @@ section { position: relative; }
   color: #f3eedd;
 }
 .video-playing .video-player { opacity: 1; pointer-events: auto; }
+.video-player video {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
 .video-player .placeholder {
   text-align: center; padding: 40px;
   font-family: var(--font-mono);
