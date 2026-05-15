@@ -381,11 +381,7 @@ function VideoSection() {
 
       <Reveal>
         <div className={`video-wrap ${playing ? "video-playing" : ""}`}>
-          <image-slot
-            id="video-poster"
-            shape="rect"
-            placeholder="Video poster frame — dawn pano of the lake (1920×1080)"
-          ></image-slot>
+          <img src="/uploads/the-film.mp4" style={{display:"none"}} />
           <div className="video-overlay" onClick={() => setPlaying(true)}>
             <div className="video-play" aria-label="Play project film">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8V4z"/></svg>
@@ -401,11 +397,12 @@ function VideoSection() {
                 <path d="M5 5l14 14M19 5L5 19" />
               </svg>
             </button>
-            <div className="placeholder">
-              <div className="big">&ldquo;Stillness, in motion.&rdquo;</div>
-              <div>Project film &middot; coming soon</div>
-              <div style={{ marginTop: 14, opacity: 0.5 }}>Replace this slot with a real &lt;video&gt; source</div>
-            </div>
+            <video
+              src="/uploads/the-film.mp4"
+              controls
+              autoPlay
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            ></video>
           </div>
         </div>
       </Reveal>
