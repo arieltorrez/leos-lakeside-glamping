@@ -83,10 +83,8 @@ window.TRANSLATIONS = {
       eyebrow: "08 — The people",
       title: "A small team. Long careers.",
       members: [
-        { name: "Leo Marchetti", role: "Founder · CEO", bio: "Twelve years in independent hospitality. Previously co-founded the Wren Inn group." },
-        { name: "Ana Brückner", role: "Architect", bio: "Principal at Atelier North. Built four lakeside projects across Scandinavia." },
-        { name: "Sam Okafor", role: "Operations", bio: "Former GM at Cliffside. Has opened twenty-three hospitality properties." },
-        { name: "Iris Tovey", role: "Finance", bio: "Hospitality CFO and investor. Underwrote $180M across the sector." }
+        { name: "Ariel R. Torrez", role: "Product Architect & Director General", bio: "Leads the vision, design, and strategic direction of Leo's Lakeside Glamping." },
+        { name: "Yuri Guzman", role: "CFO · Finance & Management Control", bio: "Oversees financial planning, investment structure, and management control." }
       ]
     },
     contact: {
@@ -193,10 +191,8 @@ window.TRANSLATIONS = {
       eyebrow: "08 — Las personas",
       title: "Un equipo pequeño. Carreras largas.",
       members: [
-        { name: "Leo Marchetti", role: "Fundador · CEO", bio: "Doce años en hospitalidad independiente. Cofundador del grupo Wren Inn." },
-        { name: "Ana Brückner", role: "Arquitecta", bio: "Socia principal en Atelier North. Cuatro proyectos lacustres en Escandinavia." },
-        { name: "Sam Okafor", role: "Operaciones", bio: "Ex gerente general en Cliffside. Ha abierto veintitrés propiedades hoteleras." },
-        { name: "Iris Tovey", role: "Finanzas", bio: "CFO e inversora hotelera. Suscribió $180M en el sector." }
+        { name: "Ariel R. Torrez", role: "Product Architect & Director General", bio: "Lidera la visión, el diseño y la dirección estratégica de Leo's Lakeside Glamping." },
+        { name: "Yuri Guzman", role: "Director de Finanzas y Control de Gestión (CFO)", bio: "Responsable de la planificación financiera, la estructura de inversión y el control de gestión." }
       ]
     },
     contact: {

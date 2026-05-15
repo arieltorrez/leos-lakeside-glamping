@@ -410,7 +410,7 @@ function Investment({ lang }) {
 }
 
 // ── Team ──────────────────────────────────────────────────────────────────────
-const TEAM_IDS = ["t-leo", "t-ana", "t-sam", "t-iris"];
+const TEAM_IDS = ["t-ariel", "t-yuri"];
 
 function Team({ lang }) {
   const T = window.TRANSLATIONS[lang].team;
