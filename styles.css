@@ -341,8 +341,8 @@ section { position: relative; }
 }
 .section-title em { font-style: italic; color: var(--muted); }
 .section-lede {
-  font-size: clamp(18px, 1.4vw, 22px);
-  line-height: 1.5;
+  font-size: clamp(15px, 1.1vw, 17px);
+  line-height: 1.6;
   color: var(--ink-2);
   max-width: 60ch;
   font-weight: 400;
@@ -351,16 +351,20 @@ section { position: relative; }
 /* ── Vision ─────────────────────────────────────────────────────────────── */
 .vision {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
+  grid-template-columns: 1fr 1.3fr;
   gap: clamp(40px, 6vw, 100px);
   align-items: center;
 }
 @media (max-width: 900px) {
   .vision { grid-template-columns: 1fr; }
 }
-.vision-image image-slot {
+.vision-image image-slot,
+.vision-image img {
   width: 100%;
-  height: clamp(420px, 60vh, 640px);
+  height: clamp(420px, 65vh, 700px);
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
 }
 .vision-quote {
   margin-top: 48px;
