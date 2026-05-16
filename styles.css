@@ -255,7 +255,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
 .video-slot:hover .vs-clear { opacity: 1; }
 .hero-inner {
   position: absolute; inset: 0;
-  padding: 0 var(--gutter) 0px;
+  padding: 0 var(--gutter) 32px;
   display: flex; flex-direction: column; justify-content: flex-end;
   z-index: 2;
   pointer-events: none;
@@ -266,7 +266,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   letter-spacing: 0.18em;
   text-transform: uppercase;
   opacity: 0.85;
-  margin-bottom: 28px;
+  margin-bottom: 16px;
   display: flex; align-items: center; gap: 14px;
 }
 .hero-eyebrow .dot {
@@ -280,7 +280,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   font-size: clamp(29px, 3.7vw, 61px);
   line-height: 1.02;
   letter-spacing: -0.02em;
-  margin: 0 0 32px;
+  margin: 0 0 0;
   max-width: 14ch;
 }
 .hero-title em {
@@ -291,6 +291,10 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   display: flex; justify-content: flex-end; align-items: flex-end;
   gap: 40px;
   flex-wrap: wrap;
+  margin-top: 0;
+  position: absolute;
+  bottom: 32px;
+  right: var(--gutter);
 }
 .hero-tag {
   font-family: var(--font-display);
