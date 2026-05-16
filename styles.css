@@ -82,8 +82,8 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
 /* ── Nav ────────────────────────────────────────────────────────────────── */
 .nav {
   position: fixed; top: 0; left: 0; right: 0;
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 16px var(--gutter);
+  display: flex; align-items: flex-start; justify-content: space-between;
+  padding: 12px var(--gutter);
   z-index: 50;
   transition: background 0.3s ease, backdrop-filter 0.3s ease, padding 0.3s ease;
   color: #ffffff;
@@ -93,7 +93,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   background: color-mix(in oklab, var(--bg) 90%, transparent);
   backdrop-filter: blur(20px) saturate(1.2);
   -webkit-backdrop-filter: blur(20px) saturate(1.2);
-  padding: 12px var(--gutter);
+  padding: 10px var(--gutter);
   color: var(--ink);
   text-shadow: none;
   border-bottom: 1px solid color-mix(in oklab, var(--line) 50%, transparent);
@@ -255,7 +255,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
 .video-slot:hover .vs-clear { opacity: 1; }
 .hero-inner {
   position: absolute; inset: 0;
-  padding: 0 var(--gutter) 40px;
+  padding: 0 var(--gutter) 20px;
   display: flex; flex-direction: column; justify-content: flex-end;
   z-index: 2;
   pointer-events: none;
