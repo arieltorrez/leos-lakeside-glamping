@@ -82,16 +82,25 @@ function Nav({ lang, setLang }) {
   const T = window.TRANSLATIONS[lang].nav;
   return (
     <nav className={`nav${hidden ? " nav--hidden" : ""}`} data-scrolled={scrolled}>
-      <div className="nav-links">
-        <a href="#vision">{T.vision}</a>
-        <a href="#film">{T.film}</a>
-        <a href="#progress">{T.progress}</a>
-        <a href="#invest">{T.investment}</a>
-        <a href="#contact">{T.contact}</a>
+      <div style={{ display: "flex", gap: "12px", alignItems: "center" }}>
+        <button
+          onClick={() => setLang(lang === "en" ? "es" : "en")}
+          className="nav-cta"
+          style={{ cursor: "pointer", background: "none", border: "1px solid currentColor" }}
+        >{T.lang}</button>
       </div>
-      <a href="#top" className="nav-brand nav-brand--center">
-        <img src="/uploads/logo.png" alt="Leo's Lakeside Glamping" style={{ height: "70px", width: "auto" }} />
-      </a>
+      <div className="nav-center">
+        <a href="#top" className="nav-brand nav-brand--center">
+          <img src="/uploads/logo.png" alt="Leo's Lakeside Glamping" style={{ height: "70px", width: "auto" }} />
+        </a>
+        <div className="nav-links">
+          <a href="#vision">{T.vision}</a>
+          <a href="#film">{T.film}</a>
+          <a href="#progress">{T.progress}</a>
+          <a href="#invest">{T.investment}</a>
+          <a href="#contact">{T.contact}</a>
+        </div>
+      </div>
       <div style={{ display: "flex", gap: "12px", alignItems: "center" }}>
         <button
           onClick={() => setLang(lang === "en" ? "es" : "en")}
