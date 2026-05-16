@@ -83,19 +83,26 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
 .nav {
   position: fixed; top: 0; left: 0; right: 0;
   display: flex; align-items: center; justify-content: space-between;
-  padding: 28px var(--gutter);
+  padding: 16px var(--gutter);
   z-index: 50;
   transition: background 0.3s ease, backdrop-filter 0.3s ease, padding 0.3s ease;
-  color: var(--nav-fg, var(--ink));
+  color: #ffffff;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.6);
 }
 .nav[data-scrolled="true"] {
-  background: color-mix(in oklab, var(--bg) 85%, transparent);
+  background: color-mix(in oklab, var(--bg) 90%, transparent);
   backdrop-filter: blur(20px) saturate(1.2);
   -webkit-backdrop-filter: blur(20px) saturate(1.2);
-  padding: 16px var(--gutter);
+  padding: 12px var(--gutter);
   color: var(--ink);
+  text-shadow: none;
   border-bottom: 1px solid color-mix(in oklab, var(--line) 50%, transparent);
 }
+.nav-links a { opacity: 0.85; }
+.nav-links a:hover { opacity: 1; }
+.nav-cta { border-color: rgba(255,255,255,0.7); color: inherit; }
+.nav[data-scrolled="true"] .nav-cta { border-color: currentColor; }
+.nav-cta:hover { background: #f0e6cc; color: #0a0a0a; border-color: #f0e6cc; }
 .nav-brand {
   font-family: var(--font-display);
   font-size: 24px;

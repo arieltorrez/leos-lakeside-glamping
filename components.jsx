@@ -83,8 +83,7 @@ function Nav({ lang, setLang }) {
   return (
     <nav className={`nav${hidden ? " nav--hidden" : ""}`} data-scrolled={scrolled}>
       <a href="#top" className="nav-brand">
-        <span className="mark">L</span>
-        <span>{T.brand}</span>
+        <img src="/uploads/logo.png" alt="Leo's Lakeside Glamping" style={{ height: "48px", width: "auto" }} />
       </a>
       <div className="nav-links">
         <a href="#vision">{T.vision}</a>
