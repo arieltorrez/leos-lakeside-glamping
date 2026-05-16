@@ -356,10 +356,18 @@ function Location({ lang }) {
     <section className="location-section" id="location">
       <div className="location-grid">
         <Reveal className="location-map" as="div">
-          <image-slot id="loc-map" shape="rect" placeholder="Site map / satellite of the lake & parcel"></image-slot>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d14466.895356048912!2d-69.11475983616843!3d-16.18001458207651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTbCsDEwJzUzLjgiUyA2OcKwMDYnNTYuNyJX!5e0!3m2!1ses!2sbo!4v1778889973881!5m2!1ses!2sbo"
+            width="100%"
+            height="100%"
+            style={{ border: 0, display: "block", minHeight: "420px" }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
           <div className="location-pin">
             <span className="ring"></span>
-            <span className="label">The site · 38 ac</span>
+            <span className="label">The site · 1 ha</span>
             <span className="dot"></span>
           </div>
         </Reveal>
