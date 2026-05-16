@@ -191,7 +191,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   .hero-inner { padding: 0 16px 80px; }
   .hero-title { font-size: clamp(24px, 7vw, 36px) !important; margin-bottom: 6px; }
   .hero-eyebrow { font-size: 10px; margin-bottom: 10px; }
-  .hero-scroll { bottom: 20px; }
+  .hero-scroll { bottom: 20px; left: auto; right: 24px; transform: none; }
 }
 
 /* ── Hamburger button ────────────────────────────────────────────────────── */
