@@ -111,7 +111,7 @@ function Nav({ lang, setLang }) {
       </div>
 
       {/* Mobile: hamburger button */}
-      <button className="nav-hamburger" onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu">
+      <button className="nav-hamburger" onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu" style={{ display: menuOpen ? "none" : undefined }}>
         <span></span><span></span><span></span>
       </button>
 
