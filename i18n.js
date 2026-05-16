@@ -33,11 +33,11 @@ window.TRANSLATIONS = {
     },
     film: {
       eyebrow: "03 — The film",
-      title: "Two minutes on the water.",
-      lede: "Aerial and on-the-ground footage filmed in April 2026 — the site as it stands today, with concept overlays for the completed phase II structures. Sound on.",
-      directedBy: "Directed by", score: "Score", premiered: "Premiered",
-      directedVal: "Mara Ostrove · Field Studio", scoreVal: "Original, recorded on site",
-      premieredVal: "Investor preview · 02 May 2026"
+      title: "The project, in motion.",
+      lede: "A short look at the site, the lake, and the surroundings. Filmed on location in Copacabana.",
+      directedBy: "Location", score: "Filmed", premiered: "Duration",
+      directedVal: "Copacabana, Lake Titicaca · Bolivia", scoreVal: "On site · 2026",
+      premieredVal: "0:32 min"
     },
     timeline: {
       eyebrow: "04 — Where we are",
@@ -89,21 +89,21 @@ window.TRANSLATIONS = {
       eyebrow: "08 — The people",
       title: "A small team. Long careers.",
       members: [
-        { name: "Ariel R. Torrez", role: "Product Architect & Director General", bio: "Leads the vision, design, and strategic direction of Leo's Lakeside Glamping." },
+        { name: "Ariel R. Torrez", role: "Product Architect & Director General", bio: "Mechatronics engineer with an MBA. Founder of Mia Copacabana Hostel & Coworking — hands-on experience building and running tourism projects on Lake Titicaca." },
         { name: "Yuri Guzman", role: "CFO · Finance & Management Control", bio: "Oversees financial planning, investment structure, and management control." }
       ]
     },
     contact: {
       eyebrow: "09 — Get in touch",
-      title: "Receive the full investor pack.",
-      lede: "The deck, financial model, architectural drawings and current construction report — sent under NDA within one business day. Site visits arranged on request.",
+      title: "Let's talk about the project.",
+      lede: "Drop us a message and we'll send you the deck, financials and site photos. We're happy to jump on a call or arrange a visit to Copacabana.",
       address: "Calle Murilo Esq. Ballivian, Copacabana, Bolivia",
       nameLbl: "Name", emailLbl: "Email", orgLbl: "Organisation", ticketLbl: "Indicative ticket",
-      namePh: "Your name", emailPh: "you@example.com", orgPh: "Firm / family office (optional)",
+      namePh: "Your name", emailPh: "you@example.com", orgPh: "Optional",
       ticketPh: "Select…",
-      tickets: ["$50K — $100K", "$100K — $250K", "$250K — $500K", "$500K +", "Exploring"],
-      notesLbl: "Anything we should know", notesPh: "Optional — questions, timeline, preferred channel",
-      legal: "By submitting you agree to receive investor materials under customary confidentiality terms.",
+      tickets: ["$15K — $30K", "$30K — $50K", "$50K — $100K", "$100K +", "Just exploring"],
+      notesLbl: "Anything you'd like to know", notesPh: "Questions, availability, preferred way to connect…",
+      legal: "We'll keep your info private and only use it to follow up on your inquiry.",
       send: "Send →",
       successTitle: "Thank you.",
       successSub: "We'll be in touch within one business day."
@@ -147,11 +147,11 @@ window.TRANSLATIONS = {
     },
     film: {
       eyebrow: "03 — El film",
-      title: "Dos minutos sobre el agua.",
-      lede: "Imágenes aéreas y en terreno filmadas en abril 2026 — el sitio tal como está hoy, con superposiciones conceptuales de las estructuras de la fase II terminada. Con sonido.",
-      directedBy: "Dirección", score: "Música", premiered: "Estreno",
-      directedVal: "Mara Ostrove · Field Studio", scoreVal: "Original, grabada en el sitio",
-      premieredVal: "Vista previa para inversores · 02 mayo 2026"
+      title: "El proyecto, en movimiento.",
+      lede: "Un vistazo al sitio, el lago y los alrededores. Filmado en Copacabana.",
+      directedBy: "Ubicación", score: "Filmado", premiered: "Duración",
+      directedVal: "Copacabana, Lago Titicaca · Bolivia", scoreVal: "En el sitio · 2026",
+      premieredVal: "0:32 min"
     },
     timeline: {
       eyebrow: "04 — Dónde estamos",
@@ -203,21 +203,21 @@ window.TRANSLATIONS = {
       eyebrow: "08 — Las personas",
       title: "Un equipo pequeño. Carreras largas.",
       members: [
-        { name: "Ariel R. Torrez", role: "Product Architect & Director General", bio: "Lidera la visión, el diseño y la dirección estratégica de Leo's Lakeside Glamping." },
+        { name: "Ariel R. Torrez", role: "Product Architect & Director General", bio: "Ingeniero en mecatrónica con maestría en ingeniería de negocios. Fundador de Mia Copacabana Hostel & Coworking — experiencia directa construyendo y operando proyectos turísticos en el Lago Titicaca." },
         { name: "Yuri Guzman", role: "Director de Finanzas y Control de Gestión (CFO)", bio: "Responsable de la planificación financiera, la estructura de inversión y el control de gestión." }
       ]
     },
     contact: {
       eyebrow: "09 — Ponerse en contacto",
-      title: "Recibe el pack completo para inversores.",
-      lede: "El deck, modelo financiero, planos arquitectónicos e informe de construcción actual — enviados bajo NDA en un día hábil. Visitas al sitio coordinadas bajo solicitud.",
+      title: "Hablemos del proyecto.",
+      lede: "Escribinos y te enviamos el deck, los números y fotos del sitio. Con gusto coordinamos una llamada o una visita a Copacabana.",
       address: "Calle Murilo Esq. Ballivian, Copacabana, Bolivia",
       nameLbl: "Nombre", emailLbl: "Correo", orgLbl: "Organización", ticketLbl: "Ticket indicativo",
-      namePh: "Tu nombre", emailPh: "tu@ejemplo.com", orgPh: "Empresa / family office (opcional)",
+      namePh: "Tu nombre", emailPh: "tu@ejemplo.com", orgPh: "Opcional",
       ticketPh: "Seleccionar…",
-      tickets: ["$50K — $100K", "$100K — $250K", "$250K — $500K", "$500K +", "Explorando"],
-      notesLbl: "Algo que debamos saber", notesPh: "Opcional — preguntas, tiempos, canal preferido",
-      legal: "Al enviar aceptas recibir materiales para inversores bajo los términos habituales de confidencialidad.",
+      tickets: ["$15K — $30K", "$30K — $50K", "$50K — $100K", "$100K +", "Solo explorando"],
+      notesLbl: "¿Qué te gustaría saber?", notesPh: "Preguntas, disponibilidad, cómo prefieres conectar…",
+      legal: "Tu información es privada y solo la usamos para responder a tu consulta.",
       send: "Enviar →",
       successTitle: "Gracias.",
       successSub: "Nos pondremos en contacto en un día hábil."

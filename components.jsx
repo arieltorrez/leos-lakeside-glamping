@@ -257,7 +257,7 @@ function VideoSection({ lang }) {
           </div>
           <div className="video-caption">
             <span className="rec"></span>
-            <span>02:14 · 4K · April 2026</span>
+            <span>0:32 · 4K · 2026</span>
           </div>
           <div className="video-player">
             <button className="close-btn" onClick={handleClose} aria-label="Close video">
