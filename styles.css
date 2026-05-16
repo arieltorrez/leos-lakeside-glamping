@@ -203,7 +203,8 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   border: none;
   cursor: pointer;
   padding: 8px;
-  z-index: 60;
+  z-index: 10000;
+  position: relative;
 }
 .nav-hamburger span {
   display: block;
@@ -219,22 +220,25 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
 /* ── Mobile dropdown menu ────────────────────────────────────────────────── */
 .nav-mobile-menu {
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(10, 10, 10, 0.97);
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: #0a0a0a;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 28px;
-  z-index: 55;
+  z-index: 9999;
+  overflow: hidden;
 }
 .nav-mobile-close {
   position: absolute;
-  top: 20px; right: 20px;
+  top: 24px; right: 20px;
   background: none; border: none;
   color: #fff; cursor: pointer;
   font-size: 28px; line-height: 1;
   opacity: 0.7;
+  z-index: 10000;
 }
 .nav-mobile-close:hover { opacity: 1; }
 .nav-mobile-menu a,
@@ -267,6 +271,8 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   text-decoration: none;
   background: none;
   cursor: pointer;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
 /* ── Hero ───────────────────────────────────────────────────────────────── */
