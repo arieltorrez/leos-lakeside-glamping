@@ -67,6 +67,8 @@ function CountUp({ to, duration = 1600, decimals = 0, prefix = "", suffix = "" }
 function Nav({ lang, setLang }) {
   const [scrolled, setScrolled] = useState(false);
   const [hidden, setHidden] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
   useEffect(() => {
     let lastY = window.scrollY;
     const onScroll = () => {
@@ -79,15 +81,21 @@ function Nav({ lang, setLang }) {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
   const T = window.TRANSLATIONS[lang].nav;
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <nav className={`nav${hidden ? " nav--hidden" : ""}`} data-scrolled={scrolled}>
-      <div style={{ flex: 1 }}></div>
+      {/* Desktop: spacer left */}
+      <div style={{ flex: 1 }} className="nav-desktop-only"></div>
+
+      {/* Center: logo + links */}
       <div className="nav-center">
         <a href="#top" className="nav-brand nav-brand--center">
           <img src="/uploads/logo.png" alt="Leo's Lakeside Glamping" style={{ height: "80px", width: "auto" }} />
         </a>
-        <div className="nav-links">
+        <div className="nav-links nav-desktop-only">
           <a href="#vision">{T.vision}</a>
           <a href="#film">{T.film}</a>
           <a href="#progress">{T.progress}</a>
@@ -95,14 +103,32 @@ function Nav({ lang, setLang }) {
           <a href="#contact">{T.contact}</a>
         </div>
       </div>
-      <div style={{ flex: 1, display: "flex", gap: "12px", alignItems: "center", justifyContent: "flex-end" }}>
-        <button
-          onClick={() => setLang(lang === "en" ? "es" : "en")}
-          className="nav-cta"
-          style={{ cursor: "pointer", background: "none", border: "1px solid currentColor" }}
-        >{T.lang}</button>
+
+      {/* Desktop: buttons right */}
+      <div style={{ flex: 1, display: "flex", gap: "12px", alignItems: "center", justifyContent: "flex-end" }} className="nav-desktop-only">
+        <button onClick={() => setLang(lang === "en" ? "es" : "en")} className="nav-cta" style={{ cursor: "pointer", background: "none", border: "1px solid currentColor" }}>{T.lang}</button>
         <a href="#contact" className="nav-cta">{T.cta}</a>
       </div>
+
+      {/* Mobile: hamburger button */}
+      <button className="nav-hamburger" onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      {/* Mobile: dropdown menu */}
+      {menuOpen && (
+        <div className="nav-mobile-menu">
+          <a href="#vision" onClick={closeMenu}>{T.vision}</a>
+          <a href="#film" onClick={closeMenu}>{T.film}</a>
+          <a href="#progress" onClick={closeMenu}>{T.progress}</a>
+          <a href="#invest" onClick={closeMenu}>{T.investment}</a>
+          <a href="#contact" onClick={closeMenu}>{T.contact}</a>
+          <div className="nav-mobile-actions">
+            <button onClick={() => { setLang(lang === "en" ? "es" : "en"); closeMenu(); }} className="nav-cta">{T.lang}</button>
+            <a href="#contact" className="nav-cta" onClick={closeMenu}>{T.cta}</a>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }
