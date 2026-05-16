@@ -154,16 +154,38 @@ function ScrollProgress() {
 // ── Hero ─────────────────────────────────────────────────────────────────────
 function Hero({ lang }) {
   const T = window.TRANSLATIONS[lang].hero;
+  const heroVideoRef = React.useRef(null);
+
+  React.useEffect(() => {
+    const video = heroVideoRef.current;
+    if (!video) return;
+    // Force play immediately
+    video.muted = true;
+    video.play().catch(() => {});
+    // iOS fallback: play on first touch
+    const forcePlay = () => {
+      video.play().catch(() => {});
+      document.removeEventListener("touchstart", forcePlay);
+      document.removeEventListener("click", forcePlay);
+    };
+    document.addEventListener("touchstart", forcePlay, { once: true });
+    document.addEventListener("click", forcePlay, { once: true });
+    return () => {
+      document.removeEventListener("touchstart", forcePlay);
+      document.removeEventListener("click", forcePlay);
+    };
+  }, []);
+
   return (
     <header className="hero" id="top">
       <div className="hero-media">
         <video
+          ref={heroVideoRef}
           src="/uploads/hero-lake.mp4"
           autoPlay
           muted
           playsInline
           loop={false}
-          ref={(el) => { if (el) { el.muted = true; el.play().catch(() => {}); } }}
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
         ></video>
       </div>
