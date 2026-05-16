@@ -178,6 +178,34 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
 .nav.nav--hidden { transform: translateY(-110%); }
 @media (max-width: 800px) {
   .nav-links { display: none; }
+  .nav-center { position: static; transform: none; }
+  .nav {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 8px;
+  }
+  .nav-center img { height: 44px !important; }
+  .nav-cta {
+    font-size: 9px;
+    padding: 8px 12px;
+    white-space: nowrap;
+  }
+  .hero-row {
+    position: static;
+    display: none;
+  }
+  .hero-inner {
+    padding: 0 16px 24px;
+  }
+  .hero-title {
+    font-size: clamp(28px, 8vw, 42px);
+    margin-bottom: 8px;
+  }
+  .hero-eyebrow {
+    font-size: 10px;
+    margin-bottom: 12px;
+  }
 }
 
 /* ── Hero ───────────────────────────────────────────────────────────────── */
