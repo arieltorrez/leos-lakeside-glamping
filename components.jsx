@@ -118,6 +118,7 @@ function Nav({ lang, setLang }) {
       {/* Mobile: dropdown menu */}
       {menuOpen && (
         <div className="nav-mobile-menu">
+          <button className="nav-mobile-close" onClick={closeMenu}>✕</button>
           <a href="#vision" onClick={closeMenu}>{T.vision}</a>
           <a href="#film" onClick={closeMenu}>{T.film}</a>
           <a href="#progress" onClick={closeMenu}>{T.progress}</a>
@@ -161,6 +162,8 @@ function Hero({ lang }) {
           autoPlay
           muted
           playsInline
+          loop={false}
+          ref={(el) => { if (el) { el.muted = true; el.play().catch(() => {}); } }}
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
         ></video>
       </div>

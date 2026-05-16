@@ -187,10 +187,11 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
     padding: 8px 16px;
   }
   .nav-center img { height: 48px !important; }
-  .hero-row { display: none; }
-  .hero-inner { padding: 0 16px 28px; }
-  .hero-title { font-size: clamp(28px, 8vw, 42px); margin-bottom: 6px; }
-  .hero-eyebrow { font-size: 10px; margin-bottom: 12px; }
+  .hero-row { display: none !important; position: static !important; }
+  .hero-inner { padding: 0 16px 80px; }
+  .hero-title { font-size: clamp(24px, 7vw, 36px) !important; margin-bottom: 6px; }
+  .hero-eyebrow { font-size: 10px; margin-bottom: 10px; }
+  .hero-scroll { bottom: 20px; }
 }
 
 /* ── Hamburger button ────────────────────────────────────────────────────── */
@@ -219,22 +220,29 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
 .nav-mobile-menu {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: color-mix(in oklab, var(--bg) 97%, transparent);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: rgba(10, 10, 10, 0.97);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  gap: 28px;
   z-index: 55;
 }
+.nav-mobile-close {
+  position: absolute;
+  top: 20px; right: 20px;
+  background: none; border: none;
+  color: #fff; cursor: pointer;
+  font-size: 28px; line-height: 1;
+  opacity: 0.7;
+}
+.nav-mobile-close:hover { opacity: 1; }
 .nav-mobile-menu a,
-.nav-mobile-menu button {
+.nav-mobile-menu button:not(.nav-mobile-close) {
   font-family: var(--font-display);
-  font-size: 28px;
+  font-size: 26px;
   font-style: italic;
-  color: var(--ink);
+  color: #fff;
   text-decoration: none;
   background: none;
   border: none;
@@ -242,21 +250,23 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   opacity: 0.85;
 }
 .nav-mobile-menu a:hover,
-.nav-mobile-menu button:hover { opacity: 1; }
+.nav-mobile-menu button:not(.nav-mobile-close):hover { opacity: 1; }
 .nav-mobile-actions {
   display: flex;
   gap: 16px;
-  margin-top: 16px;
+  margin-top: 8px;
 }
 .nav-mobile-actions .nav-cta {
   font-family: var(--font-mono);
   font-size: 11px;
   font-style: normal;
   padding: 12px 24px;
-  border: 1px solid var(--ink);
+  border: 1px solid rgba(255,255,255,0.5);
   border-radius: 999px;
-  color: var(--ink);
+  color: #fff;
   text-decoration: none;
+  background: none;
+  cursor: pointer;
 }
 
 /* ── Hero ───────────────────────────────────────────────────────────────── */
