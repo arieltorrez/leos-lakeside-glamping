@@ -233,10 +233,14 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
 }
 .nav-mobile-close {
   position: absolute;
-  top: 24px; right: 20px;
-  background: none; border: none;
+  top: 24px; right: 24px;
+  background: none;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 50%;
+  width: 36px; height: 36px;
+  display: flex; align-items: center; justify-content: center;
   color: #fff; cursor: pointer;
-  font-size: 28px; line-height: 1;
+  font-size: 16px;
   opacity: 0.7;
   z-index: 10000;
 }
@@ -257,17 +261,23 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
 .nav-mobile-menu button:not(.nav-mobile-close):hover { opacity: 1; }
 .nav-mobile-actions {
   display: flex;
-  gap: 16px;
-  margin-top: 8px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  width: 80%;
 }
 .nav-mobile-actions .nav-cta {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 10px;
   font-style: normal;
-  padding: 12px 24px;
-  border: 1px solid rgba(255,255,255,0.5);
+  padding: 8px 20px;
+  border: 1px solid rgba(255,255,255,0.3);
   border-radius: 999px;
-  color: #fff;
+  color: rgba(255,255,255,0.65);
   text-decoration: none;
   background: none;
   cursor: pointer;
