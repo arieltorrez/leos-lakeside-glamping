@@ -365,11 +365,6 @@ function Location({ lang }) {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
-          <div className="location-pin">
-            <span className="ring"></span>
-            <span className="label">The site · 1 ha</span>
-            <span className="dot"></span>
-          </div>
         </Reveal>
         <div className="location-info">
           <Reveal><div className="section-eyebrow">{T.eyebrow}</div></Reveal>
