@@ -100,6 +100,7 @@ function Nav({ lang, setLang }) {
           <a href="#film">{T.film}</a>
           <a href="#progress">{T.progress}</a>
           <a href="#invest">{T.investment}</a>
+          <a href="/investors">{T.investors}</a>
           <a href="#contact">{T.contact}</a>
         </div>
       </div>
@@ -123,6 +124,7 @@ function Nav({ lang, setLang }) {
           <a href="#film" onClick={closeMenu}>{T.film}</a>
           <a href="#progress" onClick={closeMenu}>{T.progress}</a>
           <a href="#invest" onClick={closeMenu}>{T.investment}</a>
+          <a href="/investors" onClick={closeMenu}>{T.investors}</a>
           <a href="#contact" onClick={closeMenu}>{T.contact}</a>
           <div className="nav-mobile-actions">
             <button onClick={() => { setLang(lang === "en" ? "es" : "en"); closeMenu(); }} className="nav-cta">{T.lang}</button>
@@ -448,7 +450,7 @@ function Investment({ lang }) {
           <Reveal delay="2"><p className="section-lede">{T.lede}</p></Reveal>
           <Reveal delay="3">
             <div className="invest-cta">
-              <a href="#contact" className="btn primary">{T.cta1}</a>
+              <a href="/investors" className="btn primary">{T.cta1}</a>
               <a href="#contact" className="btn ghost">{T.cta2}</a>
             </div>
           </Reveal>

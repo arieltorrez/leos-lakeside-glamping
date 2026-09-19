@@ -5,6 +5,7 @@ window.TRANSLATIONS = {
       brand: "Leo's Lakeside",
       vision: "Vision", film: "The Film", progress: "Progress",
       investment: "Investment", contact: "Contact", cta: "Request Deck",
+      investors: "Investors",
       lang: "ES"
     },
     hero: {
@@ -71,18 +72,13 @@ window.TRANSLATIONS = {
     },
     investment: {
       eyebrow: "07 — The opportunity",
-      title: "Phase 1 — open now.",
-      lede: "We are raising $135,960 for Phase 1 (5 domes + off-grid infrastructure). Capital is deployed against construction milestones. Phase 1 investors have right of first refusal on Phases 2 and 3.",
-      cta1: "Request the deck →", cta2: "Book a site visit",
+      title: "Financed by note — not equity.",
+      lede: "Leo's Lakeside Glamping is financed through a USD promissory note — not equity — backed by the same team already running a profitable hostel in Copacabana.",
+      cta1: "See the full offer →", cta2: "Book a site visit",
       lines: [
-        { k: "Phase 1 raise", v: "$135,960" },
-        { k: "Already invested", v: "$97,000 (land + earthworks)" },
-        { k: "Investor equity", v: "60%" },
-        { k: "Founder equity", v: "40%" },
-        { k: "Minimum ticket", v: "$15,000" },
-        { k: "Instrument", v: "LLC equity (USD)" },
-        { k: "Target IRR", v: "~35–40% (base)" },
-        { k: "Payback", v: "2.5–3.5 years" }
+        { k: "Instrument", v: "USD promissory note" },
+        { k: "Structure", v: "2 tranches" },
+        { k: "Ownership", v: "100% stays with the family" }
       ]
     },
     team: {
@@ -112,6 +108,106 @@ window.TRANSLATIONS = {
       brand: "Leo's Lakeside Glamping",
       copy: "© 2026 · Leo's Lakeside Glamping LLC",
       ir: "Investor relations · invest@leoslakeside.com"
+    },
+    investorPage: {
+      nav: { project: "Project", numbers: "Numbers", offer: "Offer", team: "Team", faq: "FAQ", backHome: "Main site" },
+      hero: {
+        eyebrow: "COPACABANA, LAKE TITICACA, BOLIVIA",
+        title: "Five luxury domes. A business that already works.",
+        subhead: "Leo's Lakeside Glamping is financed through a USD promissory note, backed by the same team already running a profitable hostel in Copacabana. No equity. No currency surprises.",
+        cta1: "See the offer", cta2: "Download term sheet",
+        mediaPending: "Hero photo or video — pending"
+      },
+      project: {
+        eyebrow: "01 — The project",
+        title: "Our own land, ready to build",
+        body: "One hectare on the lakeshore, already paid for and titled — no land purchase, no zoning wait. Phase 1 is five geodesic domes (2 couple, 3 family) with lake views, a hot tub, pergola and outdoor bathroom, and fully off-grid infrastructure: solar, biodigesters, lake water pumping.",
+        stats: ["5 domes", "3-month build", "$99,550 capex", "$97,000 already invested (land + earthmoving)"]
+      },
+      trackRecord: {
+        eyebrow: "02 — Track record",
+        title: "This isn't our first time operating in Copacabana",
+        body: "The same team already runs Mia Copacabana Hostel & Coworking — Airbnb host of record, listed on Booking.com and Hostelworld, rated 4.87, 8.9, and 9.2 respectively. Revenue already settles through a U.S. LLC via Airbnb and Stripe, before ever touching Bolivia. That hostel's real, month-by-month occupancy — not a generic industry assumption — is what the glamping's financial projections are built on.",
+        ratings: [{ k: "Airbnb", v: "4.87" }, { k: "Booking.com", v: "8.9" }, { k: "Hostelworld", v: "9.2" }]
+      },
+      numbers: {
+        eyebrow: "03 — The numbers",
+        title: "The numbers, unvarnished",
+        lede: "Two scenarios, calculated with real occupancy, staffing, and housekeeping cost data from the operating hostel — not generic industry assumptions.",
+        colConservative: "Conservative", colBase: "Base",
+        rows: [
+          { label: "Project IRR (10 years)", conservative: "26.4%", base: "50.5%" },
+          { label: "EBITDA, year 5", conservative: "$70,801", base: "$128,527" },
+          { label: "EBITDA / investor obligation coverage", conservative: "2.4x", base: "4.4x" },
+          { label: "Project payback", conservative: "4.0 years", base: "2.6 years" }
+        ],
+        note: "Figures from the internal financial model (September 2026), available for full review on request."
+      },
+      offer: {
+        eyebrow: "04 — The offer",
+        title: "A promissory note, not an equity promise",
+        bodyIntro: "Investors don't buy a dome or join the company — they lend against a promissory note with a specific-use covenant and a pledge over the domes and their equipment. The family's land is never part of the collateral, and ownership of the business stays 100% with the family.",
+        fieldLabels: { raises: "Raises", finances: "Finances", yieldVal: "Yield", released: "Released" },
+        tranche1: { label: "Tranche 1", raises: "USD 66,396", finances: "Shared infrastructure + domo pareja units", yieldVal: "17.3% nominal / 16.7% IRR", released: "At closing" },
+        tranche2: { label: "Tranche 2", raises: "USD 53,064", finances: "Domo familiar units", yieldVal: "15.5% nominal / 14.7% IRR", released: "After ~2-3 months of real Tranche 1 data" },
+        tickets: [{ k: "Local", v: "USD 15,000" }, { k: "Foreign", v: "USD 60,000 (same terms)" }, { k: "Reduced entry", v: "From USD 5,000-6,000" }],
+        calloutBold: "You get your capital back before year 5.",
+        calloutRest: "The rest of the term (through year 6) is pure yield on capital already returned."
+      },
+      currency: {
+        eyebrow: "05 — Currency",
+        title: "Dollars from start to finish",
+        body: "You fund in USD, USDC, or USDT — and you're paid back in the same hard currency, whether you're a local or foreign investor. No payment ever converts through bolivianos. The same dollar return for everyone."
+      },
+      protections: {
+        eyebrow: "06 — Protections",
+        title: "Built so no one gets stuck without an exit",
+        bullets: [
+          "Registered pledge over the domes and their equipment",
+          "Verifiable specific use: invoices and construction photos",
+          "Quarterly operating report",
+          "Concentration cap: no investor exceeds 25% of a tranche",
+          "Liquidity reserve: 5% of monthly revenue set aside for early exits, handled in order of request"
+        ]
+      },
+      comparison: {
+        eyebrow: "07 — Benchmark",
+        title: "How does this compare to leaving your money where it is?",
+        colAlt: "Alternative", colNominal: "Nominal", colReal: "Real",
+        rows: [
+          { label: "Stablecoin lending (USDC/USDT)", nominal: "6.0%", real: "3.0%" },
+          { label: "Private credit (U.S.)", nominal: "11.0%", real: "8.0%" },
+          { label: "Real estate syndication (U.S.)", nominal: "7.5%", real: "4.5%" },
+          { label: "This note — Tranche 1", nominal: "17.3% / IRR 16.7%", real: "≈13.7%", highlight: true }
+        ]
+      },
+      team: {
+        eyebrow: "08 — Team",
+        title: "Who's behind it",
+        members: [
+          { name: "Ariel Torrez", role: "Director General", bio: "Mechatronics engineer with an MBA. Runs Mia Copacabana Hostel & Coworking and leads construction of Leo's Lakeside Glamping on the family's land." },
+          { name: "Yuri Guzmán", role: "CFO", bio: "[space for a short 1-2 line bio]", pending: true }
+        ]
+      },
+      faq: {
+        eyebrow: "09 — FAQ",
+        title: "FAQ",
+        items: [
+          { q: "Why a note instead of equity?", a: "Because we want the business to stay in the family. The note gives you a fixed dollar return, with real collateral, without giving up ownership." },
+          { q: "What if I need to exit before year 6?", a: "There's a liquidity reserve (5% of monthly revenue) set aside specifically for early exits, handled in order of request." },
+          { q: "What if Bolivia has a currency crisis?", a: "Your funding and your payments are in USD, USDC, or USDT from day one — they never convert through bolivianos. The business's own revenue is already dollarized, via Airbnb and Stripe." },
+          { q: "What security do I have?", a: "A registered pledge over the financed domes and their equipment — not the land, which stays with the family." },
+          { q: "Can I invest less than USD 15,000?", a: "Yes, there's a reduced-entry option starting at USD 5,000-6,000." }
+        ]
+      },
+      cta: {
+        eyebrow: "10 — Let's talk",
+        title: "Let's talk",
+        body: "This site is a summary. The full detail — payment schedule, collateral, and the financial model — is in the indicative term sheet.",
+        downloadLocal: "Download term sheet (local tranche)",
+        downloadForeign: "Download term sheet (foreign tranche)",
+        contactPending: "[contact/email/WhatsApp]"
+      }
     }
   },
   es: {
@@ -119,6 +215,7 @@ window.TRANSLATIONS = {
       brand: "Leo's Lakeside",
       vision: "Visión", film: "El Film", progress: "Avance",
       investment: "Inversión", contact: "Contacto", cta: "Solicitar Deck",
+      investors: "Inversores",
       lang: "EN"
     },
     hero: {
@@ -185,18 +282,13 @@ window.TRANSLATIONS = {
     },
     investment: {
       eyebrow: "07 — La oportunidad",
-      title: "Fase 1 — abierta ahora.",
-      lede: "Estamos levantando $135.960 para la Fase 1 (5 domos + infraestructura off-grid). El capital se despliega contra hitos de construcción. Los inversores de Fase 1 tienen derecho de preferencia en Fases 2 y 3.",
-      cta1: "Solicitar el deck →", cta2: "Reservar visita al sitio",
+      title: "Financiado con pagaré — no equity.",
+      lede: "Leo's Lakeside Glamping se financia con un pagaré en dólares — no con acciones — respaldado por el mismo equipo que ya opera un hostal rentable en Copacabana.",
+      cta1: "Ver la oferta completa →", cta2: "Reservar visita al sitio",
       lines: [
-        { k: "Recaudación Fase 1", v: "$135.960" },
-        { k: "Ya invertido", v: "$97.000 (terreno + tierra)" },
-        { k: "Equity inversores", v: "60%" },
-        { k: "Equity fundadores", v: "40%" },
-        { k: "Ticket mínimo", v: "$15.000" },
-        { k: "Instrumento", v: "Equity LLC (USD)" },
-        { k: "TIR objetivo", v: "~35–40% (base)" },
-        { k: "Payback", v: "2,5–3,5 años" }
+        { k: "Instrumento", v: "Pagaré en USD" },
+        { k: "Estructura", v: "2 tramos" },
+        { k: "Propiedad", v: "100% se queda en la familia" }
       ]
     },
     team: {
@@ -226,6 +318,106 @@ window.TRANSLATIONS = {
       brand: "Leo's Lakeside Glamping",
       copy: "© 2026 · Leo's Lakeside Glamping LLC",
       ir: "Relaciones con inversores · invest@leoslakeside.com"
+    },
+    investorPage: {
+      nav: { project: "Proyecto", numbers: "Números", offer: "Oferta", team: "Equipo", faq: "FAQ", backHome: "Sitio principal" },
+      hero: {
+        eyebrow: "COPACABANA, LAGO TITICACA, BOLIVIA",
+        title: "5 domos de lujo. Un negocio que ya funciona.",
+        subhead: "Leo's Lakeside Glamping se financia con un pagaré en dólares, respaldado por el mismo equipo que ya opera un hostal rentable en Copacabana. Sin acciones. Sin sorpresas cambiarias.",
+        cta1: "Ver la oferta", cta2: "Descargar term sheet",
+        mediaPending: "Foto o video del hero — pendiente"
+      },
+      project: {
+        eyebrow: "01 — El proyecto",
+        title: "Un terreno propio, listo para construir",
+        body: "1 hectárea frente al lago, ya pagada y escriturada — no hay que comprar tierra ni esperar permisos de uso de suelo. Fase 1 son 5 domos geodésicos (2 pareja, 3 familiares) con vista al lago, tina caliente, pérgola y baño exterior, e infraestructura 100% off-grid: solar, biodigestores, bombeo de agua del lago.",
+        stats: ["5 domos", "3 meses de obra", "$99.550 capex", "$97.000 ya invertidos (terreno + movimiento de tierra)"]
+      },
+      trackRecord: {
+        eyebrow: "02 — Track record",
+        title: "No es la primera vez que operamos en Copacabana",
+        body: "El mismo equipo ya dirige Mia Copacabana Hostel & Coworking — anfitrión de registro en Airbnb, presente en Booking.com y Hostelworld, con calificaciones de 4,87, 8,9 y 9,2 respectivamente. El cobro ya pasa por una LLC en EE.UU. vía Airbnb y Stripe, antes de tocar Bolivia. La ocupación de ese hostal — mes a mes, temporada por temporada — es la base real detrás de las proyecciones del glamping, no un supuesto genérico de la industria.",
+        ratings: [{ k: "Airbnb", v: "4,87" }, { k: "Booking.com", v: "8,9" }, { k: "Hostelworld", v: "9,2" }]
+      },
+      numbers: {
+        eyebrow: "03 — Los números",
+        title: "Los números, sin maquillaje",
+        lede: "Dos escenarios, calculados con datos reales de ocupación, personal y costos de limpieza del hostal en operación — no con supuestos genéricos.",
+        colConservative: "Conservador", colBase: "Base",
+        rows: [
+          { label: "TIR del proyecto (10 años)", conservative: "26,4%", base: "50,5%" },
+          { label: "EBITDA año 5", conservative: "$70.801", base: "$128.527" },
+          { label: "Cobertura EBITDA / obligación con inversores", conservative: "2,4×", base: "4,4×" },
+          { label: "Payback del proyecto", conservative: "4,0 años", base: "2,6 años" }
+        ],
+        note: "Cifras del modelo financiero interno (septiembre 2026), disponibles para revisión completa bajo solicitud."
+      },
+      offer: {
+        eyebrow: "04 — La oferta",
+        title: "Un pagaré, no una promesa de equity",
+        bodyIntro: "El inversor no compra un domo ni entra a la sociedad — presta contra un pagaré con destino específico y garantía prendaria sobre los domos y su equipamiento. El terreno de la familia nunca es parte de la garantía, y la propiedad del negocio se queda 100% en la familia.",
+        fieldLabels: { raises: "Levanta", finances: "Financia", yieldVal: "Rendimiento", released: "Se libera" },
+        tranche1: { label: "Tramo 1", raises: "USD 66.396", finances: "Infraestructura compartida + domos pareja", yieldVal: "17,3% nominal / 16,7% TIR", released: "Al cierre" },
+        tranche2: { label: "Tramo 2", raises: "USD 53.064", finances: "Domos familiares", yieldVal: "15,5% nominal / 14,7% TIR", released: "Con ~2-3 meses de datos reales del Tramo 1" },
+        tickets: [{ k: "Local", v: "USD 15.000" }, { k: "Extranjero", v: "USD 60.000 (mismos términos)" }, { k: "Ticket reducido", v: "Desde USD 5.000-6.000" }],
+        calloutBold: "Recuperas tu capital antes de los 5 años.",
+        calloutRest: "El resto del plazo (hasta completar los 6 años) ya es renta pura sobre capital devuelto."
+      },
+      currency: {
+        eyebrow: "05 — Moneda",
+        title: "Dólares de punta a punta",
+        body: "Aportas en USD, USDC o USDT — y recibes en la misma moneda dura, sin importar si eres inversor local o extranjero. Ningún pago pasa por bolivianos en ningún punto del ciclo. Mismo retorno en dólares para todos."
+      },
+      protections: {
+        eyebrow: "06 — Protecciones",
+        title: "Construido para que nadie se quede sin salida",
+        bullets: [
+          "Prenda inscrita sobre los domos y su equipamiento",
+          "Destino específico verificable: facturas y fotos de avance de obra",
+          "Reporte trimestral de operación",
+          "Tope de concentración: ningún inversor supera el 25% de un tramo",
+          "Fondo de liquidez: 5% del ingreso mensual reservado para salidas anticipadas, atendidas por orden de llegada"
+        ]
+      },
+      comparison: {
+        eyebrow: "07 — Comparativo",
+        title: "¿Cómo se compara esto con dejar tu dinero donde está?",
+        colAlt: "Alternativa", colNominal: "Nominal", colReal: "Real",
+        rows: [
+          { label: "DPF en bolivianos", nominal: "3,0%", real: "-14,0%" },
+          { label: "Caja de ahorro en bolivianos", nominal: "2,0%", real: "-15,0%" },
+          { label: "DPF en dólares, banca boliviana", nominal: "1,5%", real: "-1,5%" },
+          { label: "Esta nota — Tramo 1", nominal: "17,3% / TIR 16,7%", real: "≈13,7%", highlight: true }
+        ]
+      },
+      team: {
+        eyebrow: "08 — Equipo",
+        title: "Quién está detrás",
+        members: [
+          { name: "Ariel Torrez", role: "Director General", bio: "Ingeniero mecatrónico con MBA. Opera Mia Copacabana Hostel & Coworking y lidera la construcción de Leo's Lakeside Glamping sobre el terreno familiar." },
+          { name: "Yuri Guzmán", role: "CFO / Director de Finanzas", bio: "[espacio para bio breve — 1-2 líneas de trayectoria]", pending: true }
+        ]
+      },
+      faq: {
+        eyebrow: "09 — FAQ",
+        title: "Preguntas frecuentes",
+        items: [
+          { q: "¿Por qué un pagaré y no acciones?", a: "Porque queremos que el negocio se quede en la familia. El pagaré te da un retorno fijo en dólares, con garantía real, sin necesidad de repartir la propiedad." },
+          { q: "¿Qué pasa si necesito salir antes de los 6 años?", a: "Hay un fondo de liquidez (5% del ingreso mensual) reservado específicamente para salidas anticipadas, atendidas por orden de llegada." },
+          { q: "¿Qué pasa si Bolivia tiene una crisis cambiaria?", a: "Tu aporte y tus pagos son en USD, USDC o USDT desde el primer día — nunca pasan por bolivianos. El ingreso del negocio ya es en dólares, vía Airbnb y Stripe." },
+          { q: "¿Qué garantía tengo?", a: "Prenda inscrita sobre los domos financiados y su equipamiento — no sobre el terreno, que permanece de la familia." },
+          { q: "¿Puedo invertir menos de USD 15.000?", a: "Sí, hay una opción de ticket reducido desde USD 5.000-6.000." }
+        ]
+      },
+      cta: {
+        eyebrow: "10 — Hablemos",
+        title: "¿Conversamos?",
+        body: "Este sitio es un resumen. El detalle completo —cronograma de pagos, garantías y el modelo financiero— está en el term sheet indicativo.",
+        downloadLocal: "Descargar term sheet (tramo local)",
+        downloadForeign: "Descargar term sheet (tramo extranjero)",
+        contactPending: "[contacto/email/WhatsApp]"
+      }
     }
   }
 };
