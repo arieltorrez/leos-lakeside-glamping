@@ -76,10 +76,38 @@ function InvestorNav({ lang, setLang }) {
 // ── Hero ─────────────────────────────────────────────────────────────────────
 function InvestorHero({ lang }) {
   const T = IT(lang).hero;
+  const heroVideoRef = useRef(null);
+
+  useEffect(() => {
+    const video = heroVideoRef.current;
+    if (!video) return;
+    video.muted = true;
+    video.play().catch(() => {});
+    const forcePlay = () => {
+      video.play().catch(() => {});
+      document.removeEventListener("touchstart", forcePlay);
+      document.removeEventListener("click", forcePlay);
+    };
+    document.addEventListener("touchstart", forcePlay, { once: true });
+    document.addEventListener("click", forcePlay, { once: true });
+    return () => {
+      document.removeEventListener("touchstart", forcePlay);
+      document.removeEventListener("click", forcePlay);
+    };
+  }, []);
+
   return (
     <header className="hero investor-hero" id="top">
       <div className="hero-media">
-        <image-slot id="investor-hero" shape="rect" placeholder={T.mediaPending}></image-slot>
+        <video
+          ref={heroVideoRef}
+          src="/uploads/inv_vid.mp4"
+          autoPlay
+          muted
+          playsInline
+          loop={false}
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+        ></video>
       </div>
       <div className="hero-inner">
         <div className="hero-eyebrow">

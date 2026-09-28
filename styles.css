@@ -1200,10 +1200,6 @@ image-slot {
 .section-inverted .btn.ghost:hover { color: var(--ink); background: var(--bg); }
 
 .investor-hero .hero-title { max-width: 22ch; }
-.investor-hero .hero-media image-slot::part(empty) {
-  justify-content: flex-start;
-  padding-top: 18vh;
-}
 .hero-subhead {
   font-size: clamp(15px, 1.3vw, 18px);
   line-height: 1.6;

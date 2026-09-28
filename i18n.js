@@ -115,8 +115,7 @@ window.TRANSLATIONS = {
         eyebrow: "COPACABANA, LAKE TITICACA, BOLIVIA",
         title: "Five luxury domes. A business that already works.",
         subhead: "Leo's Lakeside Glamping is financed through a USD promissory note, backed by the same team already running a profitable hostel in Copacabana. No equity. No currency surprises.",
-        cta1: "See the offer", cta2: "Download term sheet",
-        mediaPending: "Hero photo or video — pending"
+        cta1: "See the offer", cta2: "Download term sheet"
       },
       project: {
         eyebrow: "01 — The project",
@@ -325,8 +324,7 @@ window.TRANSLATIONS = {
         eyebrow: "COPACABANA, LAGO TITICACA, BOLIVIA",
         title: "5 domos de lujo. Un negocio que ya funciona.",
         subhead: "Leo's Lakeside Glamping se financia con un pagaré en dólares, respaldado por el mismo equipo que ya opera un hostal rentable en Copacabana. Sin acciones. Sin sorpresas cambiarias.",
-        cta1: "Ver la oferta", cta2: "Descargar term sheet",
-        mediaPending: "Foto o video del hero — pendiente"
+        cta1: "Ver la oferta", cta2: "Descargar term sheet"
       },
       project: {
         eyebrow: "01 — El proyecto",
