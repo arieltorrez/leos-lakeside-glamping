@@ -1416,15 +1416,3 @@ image-slot {
   font-size: 14px;
   line-height: 1.5;
 }
-.pending-chip {
-  display: inline-flex; align-items: center;
-  font-family: var(--font-mono);
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  padding: 16px 28px;
-  border: 1px dashed currentColor;
-  border-radius: 999px;
-  opacity: 0.7;
-  cursor: default;
-}

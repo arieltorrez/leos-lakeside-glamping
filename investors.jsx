@@ -350,7 +350,7 @@ function FinalCta({ lang }) {
         <div className="invest-cta" style={{ flexWrap: "wrap" }}>
           <a href="/uploads/leos-lakeside-term-sheet-local.pdf" className="btn primary" download>{T.downloadLocal}</a>
           <a href="/uploads/leos-lakeside-term-sheet-foreign.pdf" className="btn ghost" download>{T.downloadForeign}</a>
-          <span className="pending-chip">{T.contactPending}</span>
+          <a href={`mailto:${T.contactEmail}`} className="btn ghost">{T.contactLabel}</a>
         </div>
       </Reveal>
     </section>

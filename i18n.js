@@ -185,7 +185,7 @@ window.TRANSLATIONS = {
         title: "Who's behind it",
         members: [
           { name: "Ariel Torrez", role: "Director General", bio: "Mechatronics engineer with an MBA. Runs Mia Copacabana Hostel & Coworking and leads construction of Leo's Lakeside Glamping on the family's land." },
-          { name: "Yuri Guzmán", role: "CFO", bio: "[space for a short 1-2 line bio]", pending: true }
+          { name: "Yuri Guzmán", role: "CFO", bio: "Financial engineer specialized in real estate projects across the United States and other regions, with experience in investment structuring and financial analysis for the real estate sector." }
         ]
       },
       faq: {
@@ -205,7 +205,8 @@ window.TRANSLATIONS = {
         body: "This site is a summary. The full detail — payment schedule, collateral, and the financial model — is in the indicative term sheet.",
         downloadLocal: "Download term sheet (local tranche)",
         downloadForeign: "Download term sheet (foreign tranche)",
-        contactPending: "[contact/email/WhatsApp]"
+        contactLabel: "Contact ariel.torrez@quwaytravel.com",
+        contactEmail: "ariel.torrez@quwaytravel.com"
       }
     }
   },
@@ -394,7 +395,7 @@ window.TRANSLATIONS = {
         title: "Quién está detrás",
         members: [
           { name: "Ariel Torrez", role: "Director General", bio: "Ingeniero mecatrónico con MBA. Opera Mia Copacabana Hostel & Coworking y lidera la construcción de Leo's Lakeside Glamping sobre el terreno familiar." },
-          { name: "Yuri Guzmán", role: "CFO / Director de Finanzas", bio: "[espacio para bio breve — 1-2 líneas de trayectoria]", pending: true }
+          { name: "Yuri Guzmán", role: "CFO / Director de Finanzas", bio: "Ingeniero financiero especializado en proyectos inmobiliarios en Estados Unidos y otras regiones, con experiencia en estructuración de inversiones y análisis financiero aplicado al sector real estate." }
         ]
       },
       faq: {
@@ -414,7 +415,8 @@ window.TRANSLATIONS = {
         body: "Este sitio es un resumen. El detalle completo —cronograma de pagos, garantías y el modelo financiero— está en el term sheet indicativo.",
         downloadLocal: "Descargar term sheet (tramo local)",
         downloadForeign: "Descargar term sheet (tramo extranjero)",
-        contactPending: "[contacto/email/WhatsApp]"
+        contactLabel: "Escribir a ariel.torrez@quwaytravel.com",
+        contactEmail: "ariel.torrez@quwaytravel.com"
       }
     }
   }
